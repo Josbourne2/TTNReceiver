@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.API", "TTNRecei
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Core", "TTNReceiver.Core\TTNReceiver.Core.csproj", "{448B7BAE-35CA-400A-815B-393415995BD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Data", "TTNReceiver.Data\TTNReceiver.Data.csproj", "{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TTNReceiver.Database", "TTNReceiver.Database\TTNReceiver.Database.sqlproj", "{BB1775E7-5614-459F-857E-54003FAF7F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,16 @@ Global
 		{448B7BAE-35CA-400A-815B-393415995BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{448B7BAE-35CA-400A-815B-393415995BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{448B7BAE-35CA-400A-815B-393415995BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1775E7-5614-459F-857E-54003FAF7F28}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

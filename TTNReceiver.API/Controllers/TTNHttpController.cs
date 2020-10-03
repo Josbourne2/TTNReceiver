@@ -20,6 +20,7 @@ namespace TTNReceiver.API.Controllers
         public void ReceiveMessage([FromBody] object message)//TTNHttpDTO
         {
             TTNHttpDTO dinges = JsonConvert.DeserializeObject<TTNHttpDTO>(message.ToString());
+
             Console.WriteLine(dinges.payload_raw);
         }
     }
