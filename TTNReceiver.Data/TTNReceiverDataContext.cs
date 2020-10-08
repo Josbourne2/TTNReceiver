@@ -11,7 +11,6 @@ namespace TTNReceiver.Data
     {
         public TTNReceiverDataContext(DbContextOptions<TTNReceiverDataContext> options) : base(options)
         {
-
         }
 
         public virtual DbSet<Device> Devices { get; set; }
