@@ -57,4 +57,15 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Devices.sql" />
+    <Build Include="DeviceTypes.sql" />
+    <Build Include="Measurements.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TTNReceiver.Database.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TTNReceiver.Database.publish.xml" />
+  </ItemGroup>
 </Project>

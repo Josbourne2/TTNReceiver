@@ -7,11 +7,11 @@ namespace TTNReceiver.Core
 {
     internal class Device
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string EUI { get; set; }
         public DeviceType deviceType;
 
-        [ForeignKey]
         public int DeviceTypeId;
     }
 }

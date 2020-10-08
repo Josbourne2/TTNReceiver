@@ -8,11 +8,13 @@ namespace TTNReceiver.API
     public class TTNHttpDTO
     {
         public string payload_raw;    // Base64 encoded payload: [0x01, 0x02, 0x03, 0x04]
+        public string hardware_serial;
+        public Metadata Metadata;
     }
 
-    public class Body
+    public class Metadata
     {
-        public string payload_raw;
+        public DateTime time;
     }
 }
 

@@ -4,7 +4,10 @@ using System.Text;
 
 namespace TTNReceiver.Core
 {
-    class DeviceType
+    internal class DeviceType
     {
+        public string Name { get; set; }
+        public string DecodeFunction { get; set; }
+        public List<Device> Devices;
     }
 }

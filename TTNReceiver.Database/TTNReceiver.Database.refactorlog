@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="5a6decc7-a597-4d1e-a99d-2c6421fa849c" ChangeDateTime="10/03/2020 23:38:22">
+    <Property Name="ElementName" Value="[dbo].[DeviceTypes].[DecoderFunction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DeviceTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="JSDecoderFunction" />
+  </Operation>
+</Operations>
