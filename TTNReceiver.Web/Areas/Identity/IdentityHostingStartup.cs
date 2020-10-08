@@ -5,16 +5,17 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TTNReceiver.Web.Data;
 
 [assembly: HostingStartup(typeof(TTNReceiver.Web.Areas.Identity.IdentityHostingStartup))]
+
 namespace TTNReceiver.Web.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {
         public void Configure(IWebHostBuilder builder)
         {
-            builder.ConfigureServices((context, services) => {
+            builder.ConfigureServices((context, services) =>
+            {
             });
         }
     }
