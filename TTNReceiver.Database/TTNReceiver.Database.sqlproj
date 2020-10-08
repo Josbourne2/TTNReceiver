@@ -61,6 +61,7 @@
     <Build Include="Devices.sql" />
     <Build Include="DeviceTypes.sql" />
     <Build Include="Measurements.sql" />
+    <Build Include="RawData.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TTNReceiver.Database.refactorlog" />

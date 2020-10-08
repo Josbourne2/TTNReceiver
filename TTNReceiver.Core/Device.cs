@@ -5,13 +5,13 @@ using System.Text;
 
 namespace TTNReceiver.Core
 {
-    internal class Device
+    public class Device : ModelBase
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public string EUI { get; set; }
-        public DeviceType deviceType;
-
-        public int DeviceTypeId;
+        public string DeviceKey { get; set; }
+        public DeviceType DeviceType { get; set; }
+        public int? DeviceTypeId { get; set; }
+        public IEnumerable<RawData> RawData { get; set; }
+        public IEnumerable<Measurement> Measurements { get; set; }
     }
 }

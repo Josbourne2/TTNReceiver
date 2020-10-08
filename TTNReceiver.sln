@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.API", "TTNReceiver.API\TTNReceiver.API.csproj", "{5AD1646A-7682-49D8-8A24-46C341CF1FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTNReceiver.API", "TTNReceiver.API\TTNReceiver.API.csproj", "{5AD1646A-7682-49D8-8A24-46C341CF1FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Core", "TTNReceiver.Core\TTNReceiver.Core.csproj", "{448B7BAE-35CA-400A-815B-393415995BD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTNReceiver.Core", "TTNReceiver.Core\TTNReceiver.Core.csproj", "{448B7BAE-35CA-400A-815B-393415995BD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Data", "TTNReceiver.Data\TTNReceiver.Data.csproj", "{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTNReceiver.Data", "TTNReceiver.Data\TTNReceiver.Data.csproj", "{0D1CAEB3-7988-4CC0-ADC3-8C3030289713}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TTNReceiver.Database", "TTNReceiver.Database\TTNReceiver.Database.sqlproj", "{BB1775E7-5614-459F-857E-54003FAF7F28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Converter", "TTNReceiver.Converter\TTNReceiver.Converter.csproj", "{E19C9929-4C8F-467F-BCDD-5E9FA5C58B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTNReceiver.Converter", "TTNReceiver.Converter\TTNReceiver.Converter.csproj", "{E19C9929-4C8F-467F-BCDD-5E9FA5C58B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTNReceiver.Web", "TTNReceiver.Web\TTNReceiver.Web.csproj", "{68F02281-A8F6-449F-8311-E65AD754B84F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E19C9929-4C8F-467F-BCDD-5E9FA5C58B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E19C9929-4C8F-467F-BCDD-5E9FA5C58B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E19C9929-4C8F-467F-BCDD-5E9FA5C58B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F02281-A8F6-449F-8311-E65AD754B84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F02281-A8F6-449F-8311-E65AD754B84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F02281-A8F6-449F-8311-E65AD754B84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F02281-A8F6-449F-8311-E65AD754B84F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

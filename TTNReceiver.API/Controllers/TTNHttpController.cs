@@ -22,6 +22,12 @@ namespace TTNReceiver.API.Controllers
             TTNHttpDTO dinges = JsonConvert.DeserializeObject<TTNHttpDTO>(message.ToString());
 
             Console.WriteLine(dinges.payload_raw);
+
+            byte[] data = System.Convert.FromBase64String(dinges.payload_raw);
+
+            string hex = BitConverter.ToString(data);
+            hex = hex.Replace("-", "");
+            Console.WriteLine(hex);
         }
     }
 }

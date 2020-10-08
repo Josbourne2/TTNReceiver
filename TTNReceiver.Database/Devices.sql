@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Devices]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] SMALLINT NOT NULL PRIMARY KEY, 
     [Name] VARCHAR(50) NOT NULL, 
-    [EUI] VARCHAR(50) NOT NULL, 
-    [DeviceTypeId] INT NULL, 
+    [DeviceKey] VARCHAR(50) NOT NULL, 
+    [DeviceTypeId] SMALLINT NULL, 
     CONSTRAINT [FK_Devices_ToDeviceType] FOREIGN KEY ([DeviceTypeId]) REFERENCES [Devices]([Id]),
 
 )
