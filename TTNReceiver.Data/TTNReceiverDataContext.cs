@@ -40,7 +40,9 @@ namespace TTNReceiver.Data
             //Id
             builder.Entity<RawData>()
                 .Property(r => r.Id)
-                .HasColumnType("int");
+                .HasColumnType("int")
+                .UseIdentityColumn()
+                .ValueGeneratedOnAdd();
 
             builder.Entity<RawData>()
                 .Property(r => r.Data)
@@ -48,7 +50,7 @@ namespace TTNReceiver.Data
 
             builder.Entity<RawData>()
                 .Property(r => r.DeviceId)
-                .HasColumnType("smallint");
+                .HasColumnType("int");
 
             builder.Entity<RawData>()
                 .Property(r => r.Timestamp)
@@ -65,7 +67,9 @@ namespace TTNReceiver.Data
         {
             builder.Entity<Measurement>()
                 .Property(m => m.Id)
-                .HasColumnType("int");
+                .HasColumnType("int")
+                 .UseIdentityColumn()
+                .ValueGeneratedOnAdd();
 
             builder.Entity<Measurement>()
                 .Property(m => m.Name)
@@ -90,7 +94,9 @@ namespace TTNReceiver.Data
             // Id
             builder.Entity<Device>()
                 .Property(l => l.Id)
-                .HasColumnType("smallint");
+                .HasColumnType("int")
+
+                .ValueGeneratedOnAdd();
 
             // Name
             builder.Entity<Device>()
@@ -110,7 +116,7 @@ namespace TTNReceiver.Data
 
             builder.Entity<Device>()
                .Property(e => e.DeviceTypeId)
-               .HasColumnType("smallint");
+               .HasColumnType("int");
         }
 
         private void ConfigureDeviceTypes(ModelBuilder builder)
@@ -118,7 +124,8 @@ namespace TTNReceiver.Data
             // Id
             builder.Entity<DeviceType>()
                 .Property(l => l.Id)
-                .HasColumnType("smallint");
+                .HasColumnType("int")
+                .ValueGeneratedOnAdd();
 
             // Name
             builder.Entity<DeviceType>()
@@ -127,7 +134,7 @@ namespace TTNReceiver.Data
 
             // Description
             builder.Entity<DeviceType>()
-               .Property(l => l.JSDecodeFunction)
+               .Property(l => l.JSDecoderFunction)
                .HasColumnType("varchar(8000)");
         }
     }

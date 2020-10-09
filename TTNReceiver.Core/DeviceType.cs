@@ -7,7 +7,7 @@ namespace TTNReceiver.Core
     public class DeviceType : ModelBase
     {
         public string Name { get; set; }
-        public string JSDecodeFunction { get; set; }
+        public string JSDecoderFunction { get; set; }
         public IEnumerable<Device> Devices;
     }
 }

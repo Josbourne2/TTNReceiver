@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using TTNReceiver.Data;
 
 namespace TTNReceiver.API.Controllers
 {
@@ -12,22 +13,28 @@ namespace TTNReceiver.API.Controllers
     [ApiController]
     public class TTNHttpController : ControllerBase
     {
-        public TTNHttpController()
+        private readonly TTNReceiverDataContext _data;
+
+        public TTNHttpController(TTNReceiverDataContext data)
         {
+            _data = data;
         }
 
         [HttpPost]
         public void ReceiveMessage([FromBody] object message)//TTNHttpDTO
         {
+            //Check if device is registered and if not, add it.
+
+            //Save rawdata with deviceId
+
             TTNHttpDTO dinges = JsonConvert.DeserializeObject<TTNHttpDTO>(message.ToString());
 
             Console.WriteLine(dinges.payload_raw);
 
-            byte[] data = System.Convert.FromBase64String(dinges.payload_raw);
+            var rawData = Mapper.Map(dinges);
 
-            string hex = BitConverter.ToString(data);
-            hex = hex.Replace("-", "");
-            Console.WriteLine(hex);
+            _data.Add(rawData);
+            _data.SaveChanges();
         }
     }
 }
